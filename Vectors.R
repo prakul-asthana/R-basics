@@ -129,12 +129,10 @@ murder_rate[ind]
 ind <- match(c("New York", "Florida", "Texas"), murders$state)
 ind
 
-  # %in% function used when If rather than an index we want a logical that tells us 
-  # whether or not each element of a first vector is in a second vector
-  c("Boston", "Dakota", "Washington") %in% murders$state
+# %in% function used when If rather than an index we want a logical that tells us 
+# whether or not each element of a first vector is in a second vector
+c("Boston", "Dakota", "Washington") %in% murders$state
   
-  match(c("New York", "Florida", "Texas"), murders$state)
+match(c("New York", "Florida", "Texas"), murders$state)
   
-  which(murders$state%in%c("New York", "Florida", "Texas"))
-  
-  
+which(murders$state%in%c("New York", "Florida", "Texas"))
